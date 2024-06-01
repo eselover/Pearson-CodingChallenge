@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|c:\\users\\erics\\documents\\projects\\git\\pearson-codingchallenge\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-01T21:26:42.928Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
