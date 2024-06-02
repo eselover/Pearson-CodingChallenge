@@ -7,5 +7,8 @@ namespace Pearson_CodingChallenge.Models
         [Required]
         [DataType(DataType.Upload)]
         public IFormFile? ImportFile { get; set; }
+
+        [Required]
+        public string? TableName { get; set; }
     }
 }

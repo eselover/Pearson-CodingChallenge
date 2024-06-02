@@ -2,7 +2,7 @@
 {
     public static class ConnectionString
     {
-        private static readonly string connectionName = "Data Source=.; Initial Catalog=StudyGuideOrderManagement;User ID=admin;Password=admin123";
+        private static readonly string connectionName = "Data Source=.; Initial Catalog=StudyGuideOrders;Integrated Security=True;";
         public static string ConnectionName { get => connectionName; }
     }
 }

@@ -1,5 +1,7 @@
+GO
 CREATE DATABASE StudyGuideOrders;
 
+GO
 CREATE TABLE StudyGuideOrders.dbo.Customer (
 	Id VARCHAR(20) NOT NULL PRIMARY KEY,
 	FirstName VARCHAR(50) NOT NULL,
@@ -7,12 +9,14 @@ CREATE TABLE StudyGuideOrders.dbo.Customer (
 	Email VARCHAR(20) NOT NULL,
 );
 
+GO
 CREATE TABLE StudyGuideOrders.dbo.StudyGuide (
 	Id VARCHAR(20) NOT NULL PRIMARY KEY,
 	Name VARCHAR(100) NOT NULL,
 	Price FLOAT NOT NULL,
 );
 
+GO
 CREATE TABLE StudyGuideOrders.dbo.StudyGuideOrder (
 	Id int IDENTITY(1,1) NOT NULL PRIMARY KEY,
 	CustomerId VARCHAR(20) NOT NULL,
