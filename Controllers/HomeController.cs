@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Pearson_CodingChallenge.Models;
+using Pearson_CodingChallenge.Services;
 using System.Diagnostics;
 
 namespace Pearson_CodingChallenge.Controllers
@@ -7,10 +8,12 @@ namespace Pearson_CodingChallenge.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private DatabaseService _dbService = null;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            _dbService = new DatabaseService();
         }
 
         public IActionResult Index()
@@ -18,7 +21,7 @@ namespace Pearson_CodingChallenge.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Upload()
         {
             return View();
         }
