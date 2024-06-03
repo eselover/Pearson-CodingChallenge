@@ -26,9 +26,16 @@ namespace Pearson_CodingChallenge.Services
                         Id = Convert.ToInt32(sqlDataReader["Id"]),
                         CustomerId = sqlDataReader["CustomerId"].ToString(),
                         StudyGuideId = sqlDataReader["StudyGuideId"].ToString(),
-                        IsFulfilled = (bool)sqlDataReader["IsFulfilled"],
-                        DateFulfilled = (DateOnly)sqlDataReader["DateFulfilled"]
+                        IsFulfilled = false
                     };
+                    if (sqlDataReader["IsFulfilled"] != DBNull.Value)
+                    {
+                        order.IsFulfilled = Convert.ToBoolean(sqlDataReader["IsFulfilled"]);
+                    }
+                    if (sqlDataReader["DateFulfilled"] != DBNull.Value)
+                    {
+                        order.DateFulfilled = DateOnly.FromDateTime(Convert.ToDateTime(sqlDataReader["DateFulfilled"]));
+                    }
                     orders.Add(order);
                 }
                 con.Close();
@@ -76,7 +83,6 @@ namespace Pearson_CodingChallenge.Services
                 SqlCommand cmd = new SqlCommand("spAddOrder", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@Id", order.Id);
                 cmd.Parameters.AddWithValue("@CustomerId", order.CustomerId);
                 cmd.Parameters.AddWithValue("@StudyGuideId", order.StudyGuideId);
                 con.Open();
@@ -97,6 +103,112 @@ namespace Pearson_CodingChallenge.Services
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
+            }
+        }
+
+        public Customer GetCustomer(string customerId)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("spGetCustomer", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id", customerId);
+                con.Open();
+                SqlDataReader sqlDataReader = cmd.ExecuteReader();
+                Customer customer = null;
+
+                while (sqlDataReader.Read())
+                {
+                    customer = new Customer
+                    {
+                        Id = sqlDataReader["Id"].ToString(),
+                        FirstName = sqlDataReader["FirstName"].ToString(),
+                        LastName = sqlDataReader["LastName"].ToString(),
+                        Email = sqlDataReader["Email"].ToString()
+                    };
+                }
+                con.Close();
+
+                return customer;
+            }
+        }
+
+        public StudyGuide GetStudyGuide(string studyGuideId)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("spGetStudyGuide", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id", studyGuideId);
+                con.Open();
+                SqlDataReader sqlDataReader = cmd.ExecuteReader();
+                StudyGuide studyGuide = null;
+
+                while (sqlDataReader.Read())
+                {
+                    studyGuide = new StudyGuide
+                    {
+                        Id = sqlDataReader["Id"].ToString(),
+                        Name = sqlDataReader["Name"].ToString(),
+                        Price = (double)sqlDataReader["LastName"],
+                    };
+                }
+                con.Close();
+
+                return studyGuide;
+            }
+        }
+
+        public Order GetOrder(string customerId, string studyGuideId)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("spGetOrder", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@CustomerId", customerId);
+                cmd.Parameters.AddWithValue("@StudyGuideId", studyGuideId);
+                con.Open();
+                SqlDataReader sqlDataReader = cmd.ExecuteReader();
+                Order order = null;
+
+                while (sqlDataReader.Read())
+                {
+                    order = new Order
+                    {
+                        Id = Convert.ToInt32(sqlDataReader["Id"]),
+                        CustomerId = sqlDataReader["CustomerId"].ToString(),
+                        StudyGuideId = sqlDataReader["StudyGuideId"].ToString()
+                    };
+                }
+                con.Close();
+
+                return order;
+            }
+        }
+
+        public Order GetOrderById(int id)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("spGetOrderById", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id", id);
+                con.Open();
+                SqlDataReader sqlDataReader = cmd.ExecuteReader();
+                Order order = null;
+
+                while (sqlDataReader.Read())
+                {
+                    order = new Order
+                    {
+                        Id = Convert.ToInt32(sqlDataReader["Id"]),
+                        CustomerId = sqlDataReader["CustomerId"].ToString(),
+                        StudyGuideId = sqlDataReader["StudyGuideId"].ToString()
+                    };
+                }
+                con.Close();
+
+                return order;
             }
         }
     }

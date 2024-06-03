@@ -7,16 +7,24 @@
       "RelativeMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|c:\\users\\erics\\documents\\projects\\git\\pearson-codingchallenge\\utility\\fileprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|solutionrelative:utility\\fileprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|c:\\users\\erics\\documents\\projects\\git\\pearson-codingchallenge\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|c:\\users\\erics\\documents\\projects\\git\\pearson-codingchallenge\\views\\home\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|solutionrelative:views\\home\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|c:\\users\\erics\\documents\\projects\\git\\pearson-codingchallenge\\models\\datafile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|solutionrelative:models\\datafile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|c:\\users\\erics\\documents\\projects\\git\\pearson-codingchallenge\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|solutionrelative:services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|c:\\users\\erics\\documents\\projects\\git\\pearson-codingchallenge\\scripts\\procedures.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|solutionrelative:scripts\\procedures.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|c:\\users\\erics\\documents\\projects\\git\\pearson-codingchallenge\\scripts\\procedures.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{3C65D86B-1191-4762-993B-73D9E9E00E83}|Pearson-CodingChallenge.csproj|solutionrelative:scripts\\procedures.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,32 +34,18 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DataFile.cs",
-              "DocumentMoniker": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\Models\\DataFile.cs",
-              "RelativeDocumentMoniker": "Models\\DataFile.cs",
-              "ToolTip": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\Models\\DataFile.cs",
-              "RelativeToolTip": "Models\\DataFile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T01:15:24.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FileProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\Utility\\FileProcessor.cs",
-              "RelativeDocumentMoniker": "Utility\\FileProcessor.cs",
-              "ToolTip": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\Utility\\FileProcessor.cs",
-              "RelativeToolTip": "Utility\\FileProcessor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T01:13:21.511Z",
+              "DocumentIndex": 4,
+              "Title": "Procedures.sql ",
+              "DocumentMoniker": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\Scripts\\Procedures.sql",
+              "RelativeDocumentMoniker": "Scripts\\Procedures.sql",
+              "ToolTip": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\Scripts\\Procedures.sql",
+              "RelativeToolTip": "Scripts\\Procedures.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-06-03T13:20:55.131Z",
               "EditorCaption": ""
             },
             {
@@ -62,9 +56,35 @@
               "RelativeDocumentMoniker": "Views\\Home\\Upload.cshtml",
               "ToolTip": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\Views\\Home\\Upload.cshtml",
               "RelativeToolTip": "Views\\Home\\Upload.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T00:37:35.939Z",
+              "WhenOpened": "2024-06-03T12:54:30.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\Services\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "Services\\DatabaseService.cs",
+              "ToolTip": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\Services\\DatabaseService.cs",
+              "RelativeToolTip": "Services\\DatabaseService.cs",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAswMgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T12:53:16.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAUwDQAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T01:24:33.365Z",
               "EditorCaption": ""
             },
             {
@@ -75,7 +95,7 @@
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\erics\\Documents\\Projects\\git\\Pearson-CodingChallenge\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAQwCgAAAA0AAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAUwEQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-02T00:26:19.037Z",
               "EditorCaption": ""

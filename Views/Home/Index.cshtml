@@ -1,7 +1,59 @@
-﻿@{
+﻿@model IEnumerable<Order>
+@{
     ViewData["Title"] = "Orders";
 }
 
 <div class="text-center">
     <h1>Orders</h1>
 </div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                CustomerId
+            </th>
+            <th>
+                StudyGuideId
+            </th>
+            <th>
+                Is Fulfilled?
+            </th>
+            <th>
+                Date Fulfilled
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var order in Model)
+        {
+            <form method="post">
+                <tr>
+                    <td>
+                        @order.Id
+                    </td>
+                    <td>
+                        @order.CustomerId
+                    </td>
+                    <td>
+                        @order.StudyGuideId
+                    </td>
+                    <td>
+                        @order.IsFulfilled
+                    </td>
+                    <td>
+                        @(order.DateFulfilled == DateOnly.MinValue ? "" : order.DateFulfilled)
+                    </td>
+                    <td>
+                        <input type="submit" value="Mark Fulfilled" asp-action="Edit" asp-route-orderId="@order.Id"/>
+                    </td>
+                </tr>
+            </form>
+        }
+    </tbody>
+</table>

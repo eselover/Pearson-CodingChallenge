@@ -1,8 +1,12 @@
 ## Getting Started
 
-Run Install ?
+Setup a local SQL Server using defaults with Windows Authentication
 
-Setup a local SQL Server using defaults
+Note:
+If you have multiple database running locally and have a specific instance name or login you will have to update the connection string in the file
+Utility/ConnectionString.cs with the instance name for "DataSource" and add in any userId and Passwords.
+
+Once you have a running local database run the following commands
 
 From Root run
 `sqlcmd -S .\ -i ./Scripts/CreateSchema.sql`

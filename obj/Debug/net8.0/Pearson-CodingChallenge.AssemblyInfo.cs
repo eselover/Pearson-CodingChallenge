@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pearson-CodingChallenge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7109b88b3fea9cb04922fc8e724a248b444fd34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+109fc7b98c523a82883b1c0f57740d0e5493b55e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pearson-CodingChallenge")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pearson-CodingChallenge")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

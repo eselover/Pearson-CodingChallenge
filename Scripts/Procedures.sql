@@ -4,7 +4,44 @@ GO
 CREATE PROCEDURE spGetAllOrders
 AS
 BEGIN
-	SELECT * FROM StudyGuideOrders GROUP BY CustomerId
+	SELECT * FROM StudyGuideOrder
+END
+
+GO
+CREATE PROCEDURE spGetCustomer (
+	@Id VARCHAR(20)
+)
+AS
+BEGIN
+	SELECT * FROM Customer WHERE Id=@Id
+END
+
+GO
+CREATE PROCEDURE spGetStudyGuide (
+	@Id VARCHAR(20)
+)
+AS
+BEGIN
+	SELECT * FROM StudyGuide WHERE Id=@Id
+END
+
+GO
+CREATE PROCEDURE spGetOrder (
+	@CustomerId VARCHAR(20),
+	@StudyGuideId VARCHAR(20)
+)
+AS
+BEGIN
+	SELECT * FROM StudyGuideOrder WHERE CustomerId=@CustomerId AND StudyGuideId=@StudyGuideId
+END
+
+GO
+CREATE PROCEDURE spGetOrderById (
+	@Id INTEGER
+)
+AS
+BEGIN
+	SELECT * FROM StudyGuideOrder WHERE Id=@Id
 END
 
 GO
