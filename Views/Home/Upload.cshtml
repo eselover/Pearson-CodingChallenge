@@ -1,0 +1,15 @@
+﻿@model DataFile
+@{
+    ViewData["Title"] = "Upload";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<form enctype="multipart/form-data" method="post">
+    <div class="upload-file">
+        <input asp-for="ImportFile" type="file" class="file-input fileUpload" />
+    </div>
+    <input type="submit" value="Submit" />
+</form>
+
+<p>@ViewData["Message"]</p>
