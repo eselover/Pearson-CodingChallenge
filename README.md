@@ -1,5 +1,9 @@
 ## Getting Started
 
+Tools used:
+Visual Studio Community
+SQL Server Express
+
 Setup a local SQL Server using defaults with Windows Authentication
 
 Note:
